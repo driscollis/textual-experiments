@@ -1,0 +1,11 @@
+Screen {
+    layout: grid;
+    grid-size: 4 7;
+}
+
+#solution {
+    text-align: right;
+    column-span: 4;
+    border: solid yellow;
+    width: 1fr;
+}

@@ -1,0 +1,18 @@
+NewFolderScreen {
+    layout: grid;
+    grid-size: 2 2;
+    grid-gutter: 1 2;
+    padding: 0 1;
+    background: $surface;
+    border: thick $background 70%;
+}
+
+#new_folder {
+    column-span: 2;
+    tint: blue 40%;
+}
+
+Button {
+    width: 1fr;
+    align: center middle;
+}
