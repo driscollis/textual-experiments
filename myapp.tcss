@@ -1,0 +1,23 @@
+MyApp {
+    align: center middle;
+    #datatable {
+        height: 1fr;
+    }
+
+    Horizontal {
+        height: auto;
+    }
+
+    #button_row {
+        align: center middle;
+    }
+
+    Button {
+        margin: 1;
+    }
+
+    #last_updated {
+        dock: right;
+        offset: 0 2;
+    }
+}

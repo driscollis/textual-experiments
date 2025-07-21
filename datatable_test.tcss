@@ -1,0 +1,21 @@
+TestNodes {
+    align: center middle;
+}
+
+#datatable {
+    height: 1fr;
+    border: solid green;
+}
+
+Vertical {
+    border: blue;
+    height: auto
+}
+
+Horizontal {
+    height: auto;
+}
+
+#button-row {
+    align: center middle;
+}
