@@ -5,6 +5,7 @@ from textual.widgets import Button
 
 
 class WelcomeButton(App):
+
     def compose(self) -> ComposeResult:
         yield Button("Exit")
         self.notify("It's a trap!", severity="error", timeout=10)

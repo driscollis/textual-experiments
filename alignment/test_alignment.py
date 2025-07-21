@@ -8,7 +8,6 @@ class TestApp(App):
     def compose(self) -> ComposeResult:
         yield Label("0", id="solution")
 
-
 if __name__ == "__main__":
     app = TestApp()
     app.run()

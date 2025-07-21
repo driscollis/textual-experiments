@@ -6,7 +6,7 @@ from textual.widgets import Placeholder
 class KeylineDemoApp(App):
     CSS_PATH = "keyline_horizontal.tcss"
 
-    def compose(self) -> ComposeResult:
+    def compose(self):
         with Horizontal():
             yield Placeholder()
             yield Placeholder()

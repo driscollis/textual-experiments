@@ -11,7 +11,7 @@ class TextViewerApp(App[None]):
         try:
             with open(self.args.filepath) as fh:
                 self.data = fh.read()
-        except FileNotFoundError:
+        except:
             self.data = "File not found"
 
     def on_mount(self) -> None:

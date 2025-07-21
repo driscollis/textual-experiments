@@ -3,7 +3,7 @@ import pathlib
 from textual import on
 from textual.app import App, ComposeResult
 from textual.containers import Center
-from textual.widgets import Button, Input, DirectoryTree, Footer
+from textual.widgets import Button, Input, DirectoryTree, Footer, Label
 
 
 from screens import FolderBrowser

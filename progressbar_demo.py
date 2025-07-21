@@ -5,7 +5,6 @@ from textual.containers import Center, Middle
 from textual.timer import Timer
 from textual.widgets import Button, ProgressBar
 
-
 class Progress(App[None]):
     timer = Timer
 
@@ -33,7 +32,6 @@ class Progress(App[None]):
         """
         self.query_one(ProgressBar).update(total=100)
         self.timer.resume()
-
 
 if __name__ == "__main__":
     app = Progress()

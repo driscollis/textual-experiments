@@ -47,7 +47,7 @@ class SlideApp(App):
     }
     """
 
-    def compose(self) -> ComposeResult:
+    def compose(self) -> None:
         yield Footer()
         yield SideBar()
         yield TopBar()

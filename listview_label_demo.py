@@ -6,6 +6,7 @@ from textual.widgets import Label, ListItem, ListView, TextArea
 
 
 class ListViewDemo(App):
+
     def __init__(self) -> None:
         super().__init__()
         self.current_selection = None

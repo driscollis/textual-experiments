@@ -1,5 +1,6 @@
 from textual.app import App, ComposeResult
-from textual.widgets import Input
+from textual.screen import Screen
+from textual.widgets import Button, Header, Footer, Input, Static
 
 
 class TestApp(App):

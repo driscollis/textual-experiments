@@ -6,7 +6,6 @@ from textual import on, work
 from textual.app import App, ComposeResult
 from textual.widgets import Button, Label
 
-
 class MyApp(App):
     def compose(self) -> ComposeResult:
         self.run_button = Button("Run", variant="success", id="run")

@@ -4,15 +4,14 @@ from textual.app import App, ComposeResult
 from textual.widgets import DataTable
 
 
+
 class DataTableTest(App):
+
     def compose(self) -> ComposeResult:
         yield DataTable(id="playlist")
 
     def on_mount(self) -> None:
-        data = [
-            ("No Music Found", "", ""),
-            ("Press CTRL+L to load music files", "", ""),
-        ]
+        data =  [("No Music Found", "", ""), ("Press CTRL+L to load music files", "", "")]
         table = self.query_one(DataTable)
         table.clear(columns=True)
         table.add_columns(*data[0])

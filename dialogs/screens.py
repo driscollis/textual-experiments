@@ -83,25 +83,21 @@ class FolderBrowser(ModalScreen):
             Label("Folder:", id="folder_lbl"),
             Input(id="folder_path_input"),
             Button("New Folder", id="create_folder"),
-            Button(
-                f"{Text.from_markup(':heavy_check_mark:')}  OK",
-                variant="primary",
-                id="select_folder",
-            ),
+            Button(f"{Text.from_markup(':heavy_check_mark:')}  OK", variant="primary", id="select_folder"),
             Button(f"{Text.from_markup(":cross_mark:")}  Cancel", id="cancel"),
-            id="folder_browser",
+            id="folder_browser"
         )
-        # yield Label("Choose a directory:")
-        # yield Filtered("c:\\")
+        #yield Label("Choose a directory:")
+        #yield Filtered("c:\\")
 
-        # with Horizontal(id="folder_name"):
-        # yield Label("Folder:")
-        # yield Input()
+        #with Horizontal(id="folder_name"):
+            #yield Label("Folder:")
+            #yield Input()
 
-        # with Horizontal(id="bottom_row"):
-        # yield Button("Make New Folder", id="create_folder")
-        # yield Button("Select Folder", variant="primary", id="select_folder")
-        # yield Button("Cancel", id="cancel")
+        #with Horizontal(id="bottom_row"):
+            #yield Button("Make New Folder", id="create_folder")
+            #yield Button("Select Folder", variant="primary", id="select_folder")
+            #yield Button("Cancel", id="cancel")
 
     @on(DirectoryTree.DirectorySelected)
     def on_file_selected(self, event: DirectoryTree.DirectorySelected) -> None:
